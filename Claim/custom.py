@@ -22,5 +22,5 @@ def transform(data, model):
     # Remove target columns if  they're in the dataset
     if "taget" in data:
         data.pop("taget")
-    data = data.fillna('')
+    data = data.fillna(0)
     return data
